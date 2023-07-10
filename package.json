@@ -12,6 +12,7 @@
     "@apollo/client": "^3.8.0-alpha.15",
     "@apollo/experimental-nextjs-app-support": "^0.3.2",
     "@keystone-6/document-renderer": "^1.1.2",
+    "@keystone-6/fields-document": "^8.0.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "graphql": "^16.7.1",

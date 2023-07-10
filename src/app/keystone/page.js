@@ -1,7 +1,12 @@
 // app/page.js
 import { getClient } from "../../lib/client"
 import { gql } from "@apollo/client";
-import { DocumentRenderer, DocumentRendererProps } from "@keystone-6/document-renderer";
+
+import Post from '../../components/Post'
+
+// Force the component to ignore the cache and always render.
+export const dynamic = 'force-dynamic'
+export const revalidate = 5
 
 const query = gql`query Posts {
   posts {
@@ -17,20 +22,13 @@ const query = gql`query Posts {
 `;
 
 export default async function Page() {
-  const { data } = await getClient().query({ query });
-
-  let posts = data.posts.map((post) => {
-    let { title, intro, publishedDate, status, body } = post;
-
-    return (<li>
-      <h2>{title}</h2>
-      <p>{intro}</p>
-      <p>{publishedDate}</p>
-      <p>{status}</p>
-      <DocumentRenderer document={body.document} />
-    </li>);
+  const { data } = await getClient().query({
+    query
   });
 
+  let posts = data.posts.map((post) => {
+    return <Post post={post} />
+  });
 
   return <main>
     Posts from keystone
