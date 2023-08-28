@@ -13,7 +13,6 @@ const componentBlockRenderers = {
   },
 }
 
-
 const Post = ({ post }) => {
   let { title, intro, publishedDate, status, body } = post;
 

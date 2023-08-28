@@ -4,7 +4,7 @@ import { gql } from "@apollo/client";
 
 import Post from '../../components/Post'
 
-// Force the component to ignore the cache and always render.
+// Force SSR.
 export const dynamic = 'force-dynamic'
 export const revalidate = 5
 
@@ -18,8 +18,12 @@ const query = gql`query Posts {
       document
     }
   }
+  snippets {
+    title
+  }
 }
 `;
+
 
 export default async function Page() {
   const { data } = await getClient().query({
@@ -30,10 +34,12 @@ export default async function Page() {
     return <Post post={post} />
   });
 
-  return <main>
-    Posts from keystone
-    <ul>
-      {posts}
-    </ul>
-  </main>;
+  return (
+    <main>
+      Posts from keystone
+      <ul>
+        {posts}
+      </ul>
+    </main>
+  )
 }
