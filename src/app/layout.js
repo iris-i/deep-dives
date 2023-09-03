@@ -1,8 +1,10 @@
 import '../css/water.css'
 import '../css/globals.css'
-import { Inter } from 'next/font/google'
+import { Literata } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import Header from '../components/header/Header'
+
+const literata = Literata({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={literata.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

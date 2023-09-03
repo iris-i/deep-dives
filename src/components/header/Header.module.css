@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--primary-alt);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: small;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li a {
+  color: var(--primary-alt);
+}
+
+.highlight {
+  color: var(--highlight1);
+}
