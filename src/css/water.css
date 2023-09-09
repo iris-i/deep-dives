@@ -42,6 +42,7 @@
     --background: var(--primary-alt) --text-main: #fff;
     --code: var(--cream);
     --links: var(--cream);
+    --border: #526980;
 
     /* Under review */
     --background-body: #202b38;
@@ -50,7 +51,6 @@
     --text-bright: #fff;
     --text-muted: #a9b1ba;
     --focus: rgba(0, 150, 191, 0.67);
-    --border: #526980;
     --code: #ffbe85;
     --button-base: #0c151c;
     --button-hover: #040a0f;

@@ -8,15 +8,14 @@ const Header = () => {
   return (
     <header className={header}>
       <div className={inner}>
-        <h1 className={title}>Deep Dives</h1>
         <nav>
           <ul className={navigation}>
             <li><Link href="/">Learning Journeys</Link></li>
             <li><Link href="/snippets">
               <span className={highlight}>T</span>
-              oday.
-              <span className={highlight}>I</span>.
-              <span className={highlight}>L</span>earnt</Link></li>
+              oday .
+              <span className={highlight}> I</span> .
+              <span className={highlight}> L</span>earnt</Link></li>
           </ul>
         </nav>
       </div>

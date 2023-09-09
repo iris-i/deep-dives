@@ -1,10 +1,28 @@
 import '../css/water.css'
 import '../css/globals.css'
+import localFont from 'next/font/local'
 import { Literata } from 'next/font/google'
 
 import Header from '../components/header/Header'
 
-const literata = Literata({ subsets: ['latin'] })
+const literata = Literata({
+  subsets: ['latin'],
+  variable: '--font-literata',
+})
+
+const agrandir = localFont(
+  {
+    src: '../fonts/Agrandir-Medium.woff',
+    variable: '--font-agrandir',
+  }
+)
+
+const agrandirRegular = localFont(
+  {
+    src: '../fonts/Agrandir-Regular.otf',
+    variable: '--font-agrandir-regular',
+  }
+)
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={literata.className}>
+      <body className={`${agrandir.variable} ${literata.variable} ${agrandirRegular.variable}`}>
         <Header />
         {children}
       </body>
