@@ -11,6 +11,7 @@ module.exports = {
       highlight2: 'var(--highlight2)',
       cream: 'var(--cream)',
       black: 'var(--primary-alt)',
+      white: '#fff'
     },
     extend: {
       fontFamily: {

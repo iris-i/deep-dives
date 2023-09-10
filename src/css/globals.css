@@ -39,3 +39,8 @@ h5,
 h6 {
   font-family: var(--font-agrandir);
 }
+
+a:focus,
+a:active {
+  border: 2px dashed var(--primary-alt);
+}

@@ -19,7 +19,7 @@ const query = gql`query Posts {
       document
     }
   }
-  snippets {
+  snippets(take: 3) {
     title
     description
     categories {
@@ -36,6 +36,9 @@ export default async function Home() {
     <main>
       <Hero />
       <SnippetsList data={data.snippets} />
+      <div className="mx-0 my-10 border bg-secondary">
+        <h2 className="text-8xl text-white mx-auto text-center p-8 -mb-16">Learning Journeys</h2>
+      </div>
     </main>
   )
 }

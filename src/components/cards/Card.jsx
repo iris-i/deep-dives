@@ -18,7 +18,7 @@ const Card = ({bg, snippet, rounded, border}) => {
       <li key={snippet.id} className ="flex flex-auto flex-col justify-between h-full">
         <Tag categories={snippet.categories}/>
         <div className="flex justify-between items-center">
-          <h3 className="inline-block w-3/4">{snippet.title}</h3>
+          <h3 className="inline-block w-3/4 font-body">{snippet.title}</h3>
           <ArrowTrans color = {arrowColor}/>
         </div>
       </li>
