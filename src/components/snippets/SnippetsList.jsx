@@ -17,7 +17,7 @@ const SnippetsList = ({data}) => {
   return (
     <Section>
       <div className = "flex">
-        <div className = "w-1/4">
+        <div className = "basis-1/6">
           <TitleCard 
             title={"Today I learnt"}
             intro={"Daily snippets of aha moments"} 
@@ -25,7 +25,7 @@ const SnippetsList = ({data}) => {
             linkText={"Read all TIL posts."}
           />
           </div>
-      <ul className = "grid grid-cols-3 gap-4">
+      <ul className = "grid grid-cols-3 gap-4 basis-5/6">
         {snippetsList}
       </ul>
       </div>

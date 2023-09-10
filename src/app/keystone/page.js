@@ -2,7 +2,7 @@
 import { getClient } from "../../lib/client"
 import { gql } from "@apollo/client";
 
-import Post from '../../components/Post'
+import Post from '../../components/posts/Post'
 
 // Force SSR.
 export const dynamic = 'force-dynamic'

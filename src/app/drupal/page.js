@@ -1,5 +1,5 @@
 'use client'
-import Post from '../../components/Post'
+import Post from '../../components/posts/Post'
 import { DrupalClient } from 'next-drupal'
 import { useState, useEffect } from 'react'
 

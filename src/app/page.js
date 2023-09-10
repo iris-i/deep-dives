@@ -4,6 +4,7 @@ import { gql } from "@apollo/client";
 
 import Hero from '@/components/hero/Hero'
 import SnippetsList from '@/components/snippets/SnippetsList'
+import LearningJourneys from '@/components/journeys/LearningJourneys'
 
 // Force SSR.
 export const dynamic = 'force-dynamic'
@@ -15,15 +16,28 @@ const query = gql`query Posts {
     intro
     publishedDate
     status
-    body {
-      document
-    }
+    id
   }
   snippets(take: 3) {
     title
     description
     categories {
       name
+    }
+  }
+  learningJourneys {
+    categories {
+      name
+      id
+    }
+    description {
+      document
+    }
+    id
+    name
+    posts{
+      title
+      id
     }
   }
 }
@@ -36,9 +50,10 @@ export default async function Home() {
     <main>
       <Hero />
       <SnippetsList data={data.snippets} />
-      <div className="mx-0 my-10 border bg-secondary">
+      <div className="mx-0 mt-10 border bg-secondary">
         <h2 className="text-8xl text-white mx-auto text-center p-8 -mb-16">Learning Journeys</h2>
       </div>
+      <LearningJourneys data={data.learningJourneys} />
     </main>
   )
 }
