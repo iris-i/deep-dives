@@ -22,6 +22,9 @@ const query = gql`query Posts {
   snippets {
     title
     description
+    categories {
+      name
+    }
   }
 }
 `;

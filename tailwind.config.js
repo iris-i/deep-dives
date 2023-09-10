@@ -5,11 +5,12 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: 'var(--color-primary)',
+      primary: 'var(--primary)',
       secondary: 'var(--primary-alt)',
       highlight1: 'var(--highlight1)',
       highlight2: 'var(--highlight2)',
       cream: 'var(--cream)',
+      black: 'var(--primary-alt)',
     },
     extend: {
       fontFamily: {
