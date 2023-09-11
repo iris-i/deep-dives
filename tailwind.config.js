@@ -6,12 +6,13 @@ module.exports = {
   theme: {
     colors: {
       primary: 'var(--primary)',
-      secondary: 'var(--primary-alt)',
+      secondary: 'var(--secondary)',
       highlight1: 'var(--highlight1)',
       highlight2: 'var(--highlight2)',
       cream: 'var(--cream)',
-      black: 'var(--primary-alt)',
-      white: '#fff'
+      black: 'var(--ink)',
+      white: '#fff',
+      background_body: 'var(--background-body)'
     },
     extend: {
       fontFamily: {

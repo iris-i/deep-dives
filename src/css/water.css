@@ -3,21 +3,22 @@
   --highlight1: #D6430A;
   --highlight2: #d7df23;
   --primary: #0048e8;
-  --primary-alt: #152039;
+  --secondary: #152039;
+  --ink: #152039;
   --links: var(--primary);
-  --cream: #f6e7d8;
+  --cream: #F0EBD8;
 
   /* Default useful vars */
   --background: #fff;
-  --text-main: var(--primary-alt);
-  --code: var(--primary-alt);
+  --text-main: var(--ink);
+  --code: var(--ink);
 
   /* Under review */
   --background-alt: #f7f7f7;
   --background-body: #fff;
   --text-muted: #70777f;
   --focus: rgba(0, 150, 191, 0.67);
-  --border: #dbdbdb;
+  --border: #000;
   --animation-duration: 0.1s;
   --button-base: #d0cfcf;
   --button-hover: #9b9b9b;
@@ -32,24 +33,21 @@
 @media (prefers-color-scheme:dark) {
   :root {
     /* Added site theme vars  */
-    --highlight1: #f14902;
-    --highlight2: #d7df23;
+    --highlight1: #AD343E;
+    --highlight2: #31572C;
     --primary: #0048e8;
-    --primary-alt: #152015;
-    --cream: #f6e7d8;
-    --links: var(--primary);
+    --links: var(--cream);
 
     /* Default useful vars */
-    --background: var(--primary-alt) --text-main: #fff;
+    --background: var(--ink);
     --code: var(--cream);
-    --links: var(--cream);
-    --border: #526980;
+    --border: var(--background-body);
+    --background-body: #0B111E; /*#202b38;*/
+    --text-main: var(--cream);
+    --text-bright: var(--cream);
 
     /* Under review */
-    --background-body: #202b38;
-    --background: #161f27;
     --background-alt: #1a242f;
-    --text-bright: #fff;
     --text-muted: #a9b1ba;
     --focus: rgba(0, 150, 191, 0.67);
     --code: #ffbe85;

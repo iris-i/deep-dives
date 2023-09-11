@@ -50,8 +50,8 @@ export default async function Home() {
     <main>
       <Hero />
       <SnippetsList data={data.snippets} />
-      <div className="mx-0 mt-10 border bg-secondary">
-        <h2 className="text-8xl text-white mx-auto text-center p-8 -mb-16">Learning Journeys</h2>
+      <div className="mx-0 mt-10 border bg-secondary dark:bg-cream">
+        <h2 className="text-8xl text-white dark:text-secondary mx-auto text-center p-8 -mb-16">Learning Journeys</h2>
       </div>
       <LearningJourneys data={data.learningJourneys} />
     </main>

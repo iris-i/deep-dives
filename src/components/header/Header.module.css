@@ -20,7 +20,7 @@
 }
 
 .navigation li a {
-  color: var(--primary-alt);
+  color: var(--links);
   text-decoration: underline;
   padding: 2rem;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
 }
 
 .navigation li a:hover {
-  color: var(--primary);
+  color: var(--links);
 }
 
 .highlight {
