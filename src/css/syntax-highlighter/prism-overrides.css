@@ -1,0 +1,5 @@
+:not(pre)>code[class*=language-],
+pre[class*=language-] {
+  background: var(--ink);
+  margin: 3rem 0;
+}

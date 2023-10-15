@@ -12,6 +12,7 @@
   --background: #fff;
   --text-main: var(--ink);
   --code: var(--ink);
+  --selection: var(--highlight2);
 
   /* Under review */
   --background-alt: #f7f7f7;
@@ -45,6 +46,7 @@
     --background-body: #0B111E; /*#202b38;*/
     --text-main: var(--cream);
     --text-bright: var(--cream);
+    --selection: var(--primary);
 
     /* Under review */
     --background-alt: #1a242f;
