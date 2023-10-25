@@ -1,68 +1,4 @@
-:root {
-  /* Added site theme vars  */
-  --highlight1: #D6430A;
-  --highlight2: #d7df23;
-  --primary: #0048e8;
-  --secondary: #152039;
-  --ink: #152039;
-  --links: var(--primary);
-  --cream: #F0EBD8;
-
-  /* Default useful vars */
-  --background: #fff;
-  --text-main: var(--ink);
-  --code: var(--ink);
-  --selection: var(--highlight2);
-
-  /* Under review */
-  --background-alt: #f7f7f7;
-  --background-body: #fff;
-  --text-muted: #70777f;
-  --focus: rgba(0, 150, 191, 0.67);
-  --border: #000;
-  --animation-duration: 0.1s;
-  --button-base: #d0cfcf;
-  --button-hover: #9b9b9b;
-  --scrollbar-thumb: #aaa;
-  --scrollbar-thumb-hover: var(--button-hover);
-  --form-placeholder: #949494;
-  --form-text: #1d1d1d;
-  --highlight: #ff0;
-  --select-arrow: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='63' width='117' fill='%23161f27'%3E%3Cpath d='M115 2c-1-2-4-2-5 0L59 53 7 2a4 4 0 00-5 5l54 54 2 2 3-2 54-54c2-1 2-4 0-5z'/%3E%3C/svg%3E")
-}
-
-@media (prefers-color-scheme:dark) {
-  :root {
-    /* Added site theme vars  */
-    --highlight1: #AD343E;
-    --highlight2: #31572C;
-    --primary: #0048e8;
-    --links: var(--cream);
-
-    /* Default useful vars */
-    --background: var(--ink);
-    --code: var(--cream);
-    --border: var(--background-body);
-    --background-body: #0B111E; /*#202b38;*/
-    --text-main: var(--cream);
-    --text-bright: var(--cream);
-    --selection: var(--primary);
-
-    /* Under review */
-    --background-alt: #1a242f;
-    --text-muted: #a9b1ba;
-    --focus: rgba(0, 150, 191, 0.67);
-    --code: #ffbe85;
-    --button-base: #0c151c;
-    --button-hover: #040a0f;
-    --scrollbar-thumb: var(--button-hover);
-    --scrollbar-thumb-hover: #000;
-    --form-placeholder: #a9a9a9;
-    --form-text: #fff;
-    --highlight: #efdb43;
-    --select-arrow: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='63' width='117' fill='%23efefef'%3E%3Cpath d='M115 2c-1-2-4-2-5 0L59 53 7 2a4 4 0 00-5 5l54 54 2 2 3-2 54-54c2-1 2-4 0-5z'/%3E%3C/svg%3E")
-  }
-}
+@import "./variables.css";
 
 html {
   scrollbar-color: #aaa #fff;
@@ -156,8 +92,15 @@ h1 {
 
 @media (prefers-color-scheme:dark) {
   h1 {
-    color: #fff;
-    color: var(--text-bright)
+    background-image: var(--rainbow-gradient,#fff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0 0 2rem #000);
+    text-shadow: none!important;
   }
 }
 
