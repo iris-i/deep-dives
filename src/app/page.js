@@ -20,6 +20,7 @@ const query = gql`query Posts {
   }
   snippets(take: 3) {
     title
+    slug
     description
     categories {
       name
@@ -53,7 +54,7 @@ export default async function Home() {
         large
         title="Deep Dives and Quick Bytes"
         subtitle="This developer's tales of rabbit holes and aha moments"
-        description="The beauty of continuous learning is that there is always room for improvement. These posts reflect my understanding on any given day and yes, future me will definitely shake her head at my current naiveté."
+        description="The beauty of continuous learning is that there is always room for improvement. These posts reflect my understanding on any given day and yes, future me will definitely roll her eyes at my past code."
       />
       <SnippetsList data={data.snippets} />
       <div className="mx-0 mt-10 border bg-secondary dark:bg-cream">
