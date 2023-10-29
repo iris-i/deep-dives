@@ -19,10 +19,15 @@
   align-items: center;
 }
 
+.navigation svg {
+  display: inline;
+  max-height: 120px
+}
+
 .navigation li a {
   color: var(--links);
   text-decoration: underline;
-  padding: 2rem;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.084em;

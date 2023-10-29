@@ -1,6 +1,9 @@
 // Site-wide Header
 import Link from "next/link"
+import Image from 'next/image';
 import styles from './Header.module.css'
+
+import IrisLogo from "../svgs/irisi";
 
 const Header = () => {
   const { header, title, navigation, inner, highlight } = styles;
@@ -8,9 +11,15 @@ const Header = () => {
   return (
     <header className={header}>
       <div className={inner}>
+
         <nav>
           <ul className={navigation}>
-            <li><Link href="/">Learning Journeys</Link></li>
+            <li><Link href="/posts">All Articles</Link></li>
+            <li>
+            <Link href="/">
+                <IrisLogo />
+              </Link>
+            </li>
             <li><Link href="/snippets">
               <span className={highlight}>T</span>
               oday .
