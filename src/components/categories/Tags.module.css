@@ -1,0 +1,11 @@
+/* .category__item {
+
+} */
+
+.category__item::after {
+  content: ",";
+}
+
+.category__item:last-child::after {
+  content: "";
+}
