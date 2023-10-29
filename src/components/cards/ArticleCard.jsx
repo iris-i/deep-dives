@@ -12,7 +12,7 @@ const ArticleCard = ({article}) => {
   let date = formatDate(publishedDate);
 
   // Create the slug url
-  let slugUrl = type === "Post" ? `/post/${slug}` : `/snippet/${slug}`;
+  let slugUrl = type === "Post" ? `/posts/${slug}` : `/snippets/${slug}`;
 
   return (
     <li className = "border-t py-4">

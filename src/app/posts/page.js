@@ -17,6 +17,7 @@ const query = gql`query Posts {
     intro
     publishedDate
     status
+    slug
     categories {
       name
     }
@@ -27,6 +28,7 @@ const query = gql`query Posts {
     title
     description
     publishedDate
+    slug
     categories {
       name
     }
