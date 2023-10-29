@@ -4,7 +4,7 @@ const PostTeaser = ({ post }) => {
   const { title, body, slug } = post;
   return (
     <li className=" list-disc">
-      <Link href={`/post/${slug}`}><h3>{title}</h3></Link>
+      <Link href={`/posts/${slug}`}><h3 className="inline">{title}</h3></Link>
     </li>
   )
 }
