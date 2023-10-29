@@ -1273,9 +1273,6 @@ dialog::backdrop {
 }
 
 footer {
-  border-top: 1px solid #dbdbdb;
-  border-top: 1px solid var(--border);
-  padding-top: 10px;
   color: #70777f;
   color: var(--text-muted)
 }
@@ -1284,13 +1281,7 @@ footer {
   footer {
     color: #a9b1ba;
     color: var(--text-muted);
-    border-top: 1px solid #526980;
-    border-top: 1px solid var(--border)
   }
-}
-
-body>footer {
-  margin-top: 40px
 }
 
 @media print {

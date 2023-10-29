@@ -4,6 +4,7 @@ import localFont from 'next/font/local'
 import { Literata } from 'next/font/google'
 
 import Header from '../components/header/Header'
+import Footer from '@/components/Footer'
 
 const literata = Literata({
   subsets: ['latin'],
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
       <body className={`${agrandir.variable} ${literata.variable} ${agrandirRegular.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
