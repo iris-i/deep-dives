@@ -21,7 +21,7 @@ const SnippetsList = ({data}) => {
           <TitleCard 
             title={"Today I learnt"}
             intro={"Daily snippets of aha moments"} 
-            url={"/til"}
+            url={"/snippets"}
             linkText={"Read all TIL posts."}
           />
         </div>
