@@ -19,6 +19,7 @@ const query = gql`query Posts {
     id
   }
   snippets(take: 3) {
+    id
     title
     slug
     description

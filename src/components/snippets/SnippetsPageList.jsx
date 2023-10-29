@@ -7,9 +7,9 @@ const SnippetsPageList = ({data}) => {
   let snippetsList = data?.map((snippet, index) => {
 
       if (index % 2 == 0) {
-        return <Card snippet={snippet}/> }
+        return <Card key={snippet.id}  snippet={snippet}/> }
       else {
-         return  <Card snippet={snippet} bg="highlight" rounded border/>
+         return  <Card key={snippet.id}  snippet={snippet} bg="highlight" rounded border/>
       }
 
   })

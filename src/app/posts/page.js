@@ -19,6 +19,7 @@ const query = gql`query Posts {
     status
     slug
     categories {
+      id
       name
     }
 
@@ -30,6 +31,7 @@ const query = gql`query Posts {
     publishedDate
     slug
     categories {
+      id
       name
     }
   }
